@@ -1298,7 +1298,7 @@ def checkInternetConnection():
 
 def createMessge():
      today = date.today().strftime("%d/%m/%Y")
-     message = f'📅 Daily report {today} (N: {ARGS.wfd[0]})\n\n'
+     message = f'\n📅 Daily report {today} (N: {ARGS.wfd[0]}) Place\n\n'
      for index, value in enumerate(LOGS.items(), 1):
          if value[1]['Last check'] == str(date.today()):
              status = '✅ Farmed'
